@@ -19,6 +19,7 @@ function App() {
 
         <Route path="/" element={token ? <Navigate to="/dashboard" /> : <Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={token ? <Dashboard /> : <Navigate to="/" />} />
         <Route path="/task-list" element={token ? <TaskList /> : <Navigate to="/" />} />
       </Routes>
